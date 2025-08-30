@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Eternal Warriors",
+    "members": ["Alice Johnson", "Bob Smith", "Carol Davis", "David Wilson"],
+    "project": "E-commerce Platform",
+    "githubRepo": "https://github.com/codewarriors/ecommerce-platform",
+    "commitId": "a1b2c3d4e5f6789",
+    "score": null,
+    "feedback": "",
+    "status": "pending"
+  },
+  {
+    "id": 2,
+    "name": "Tech Innovators",
+    "members": ["Emma Brown", "Frank Miller", "Grace Lee"],
+    "project": "AI Chatbot",
+    "githubRepo": "https://github.com/techinnovators/ai-chatbot",
+    "commitId": "b2c3d4e5f6g7890",
+    "score": 8.5,
+    "feedback": "Excellent implementation with good UI/UX. Could improve error handling.",
+    "status": "evaluated"
+  },
+  {
+    "id": 3,
+    "name": "Digital Pioneers",
+    "members": ["Henry Taylor", "Ivy Chen", "Jack Robinson", "Kate Adams"],
+    "project": "Mobile Fitness App",
+    "githubRepo": "https://github.com/digitalpioneers/fitness-app",
+    "commitId": "c3d4e5f6g7h8901",
+    "score": 7.2,
+    "feedback": "Good concept and execution. Missing some advanced features.",
+    "status": "evaluated"
+  },
+  {
+    "id": 4,
+    "name": "Future Builders",
+    "members": ["Liam Johnson", "Mia Wilson", "Noah Davis"],
+    "project": "Blockchain Voting System",
+    "githubRepo": "https://github.com/futurebuilders/blockchain-voting",
+    "commitId": "d4e5f6g7h8i9012",
+    "score": null,
+    "feedback": "",
+    "status": "pending"
+  },
+  {
+    "id": 5,
+    "name": "Innovation Squad",
+    "members": ["Olivia Brown", "Paul Miller", "Quinn Lee", "Ruby Taylor"],
+    "project": "IoT Smart Home",
+    "githubRepo": "https://github.com/innovationsquad/smart-home",
+    "commitId": "e5f6g7h8i9j0123",
+    "score": 9.1,
+    "feedback": "Outstanding project with innovative features and clean code.",
+    "status": "evaluated"
+  },
+  {
+    "id": 6,
+    "name": "Techie Squad",
+    "members": ["Olivia Brown", "Paul Miller", "Quinn Lee", "Ruby Taylor"],
+    "project": "Block chain",
+    "githubRepo": "https://github.com/innovationsquad/smart-home",
+    "commitId": "e5f6g7h8i9j0123",
+    "score": 9.1,
+    "feedback": "Outstanding project with innovative features and clean code.",
+    "status": "evaluated"
+  }
+]
