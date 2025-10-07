@@ -288,7 +288,7 @@ const enhancedCleanupCompletedHackathons = async () => {
 
         if (completedHackathons.length === 0) {
             return {
-                message: 'No completed hackathons found to clean up',
+            message: 'No completed hackathons found to clean up',
                 statistics: []
             };
         }
@@ -502,7 +502,8 @@ export const leaveHackathon = async (req, res) => {
 export const checkActiveOrUpcomingHackathon = async (req, res) => {
     try {
         const currentTime = new Date();
-        const availableHackathon = await Hackathon.findOne({ endDate: { $gte: currentTime } });
+        // 🛑 FIX: Changed the field from 'endDate' (typo) to 'end_datetime'
+        const availableHackathon = await Hackathon.findOne({ end_datetime: { $gte: currentTime } }); 
         if (availableHackathon) {
             return res.status(200).json({ exists: true, message: 'Active or upcoming events are available.' });
         } else {

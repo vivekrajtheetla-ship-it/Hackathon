@@ -101,10 +101,19 @@ const ViewHackathon = () => {
                                 <TableBody>
                                     {hackathons.map((hackathon) => (
                                         <TableRow key={hackathon._id}>
-                                            {/* --- ⬇️ FIXED: Using correct object properties from the backend --- */}
                                             <TableCell className="font-medium">{hackathon.hackathon_name}</TableCell>
-                                            <TableCell>{format(new Date(hackathon.start_datetime), 'MMM d, yyyy')}</TableCell>
-                                            <TableCell>{format(new Date(hackathon.end_datetime), 'MMM d, yyyy')}</TableCell>
+                                            {/* FIX: Add check for valid start_datetime */}
+                                            <TableCell>
+                                                {hackathon.start_datetime 
+                                                    ? format(new Date(hackathon.start_datetime), 'MMM d, yyyy') 
+                                                    : 'N/A'}
+                                            </TableCell>
+                                            {/* FIX: Add check for valid end_datetime */}
+                                            <TableCell>
+                                                {hackathon.end_datetime 
+                                                    ? format(new Date(hackathon.end_datetime), 'MMM d, yyyy') 
+                                                    : 'N/A'}
+                                            </TableCell>
                                             <TableCell className="text-center">
                                                 <HackathonStatusBadge status={hackathon.status} />
                                             </TableCell>
