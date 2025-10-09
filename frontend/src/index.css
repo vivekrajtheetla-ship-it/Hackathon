@@ -66,3 +66,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* * Apply the keyframe as a utility class if needed, or rely on inline style.
+ * Since we used it as an inline utility, we'll try to keep it here.
+ */
+.animate-pulse-slow {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

@@ -15,7 +15,6 @@ import Titles from './pages/admin/Titles';
 import RoleMapping from './pages/admin/RoleMapping';
 import HackathonManagement from './pages/admin/HackathonManagement';
 import QuestionMapping from './pages/admin/QuestionMapping';
-
 // Non-admin controllers
 import ParticipantPage from './pages/participant/ParticipantPage';
 import CoordinatorPage from './pages/coordinator/CoordinatorPage';
@@ -33,6 +32,7 @@ function App() {
 
           {/* Admin */}
           <Route path="/admin" element={<AdminLanding />} />
+          <Route path="/admin/dashboard" element={<AdminLanding />} />
           <Route path="/admin/create-hackathon" element={<CreateHackathon />} />
           <Route path="/admin/view-hackathon" element={<ViewHackathon />} />
           <Route path="/admin/hackathon-winners" element={<HackathonWinners />} />
