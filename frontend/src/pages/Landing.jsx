@@ -24,6 +24,7 @@ import {
 // FOOTER COMPONENT
 // ====================================================================
 
+/*
 const AppFooter = () => {
     const navigate = useNavigate();
 
@@ -140,6 +141,7 @@ const AppFooter = () => {
         </footer>
     );
 };
+*/
 
 // ====================================================================
 // COMMENTED OUT: LIVE STATISTICS BAR COMPONENT
@@ -234,10 +236,10 @@ const Landing = () => {
             color: "from-amber-400 to-orange-400",
         },
         {
-            icon: BarChart,
-            title: "Live Analytics Dashboard",
-            description: "Monitor participation, progress, and submissions with real-time data.",
-            color: "from-green-400 to-lime-400",
+            icon: Globe, // Changed from BarChart
+            title: "Coordination Assistance", // Changed from Live Analytics Dashboard
+            description: "Automated scheduling, resource allocation, and real-time announcements for smooth event flow.",
+            color: "from-orange-400 to-yellow-400", // New color gradient
         },
         {
             icon: Shield,
@@ -246,10 +248,10 @@ const Landing = () => {
             color: "from-red-400 to-pink-400",
         },
         {
-            icon: MessageCircle,
-            title: "Built-in Community Chat",
-            description: "Foster collaboration and support with integrated team and global chat functionality.",
-            color: "from-indigo-400 to-violet-400",
+            icon: Target, // Changed from MessageCircle
+            title: "Dedicated Judge Portal", // Changed from Built-in Community Chat
+            description: "A centralized interface for judges to submit scores and view project history efficiently.",
+            color: "from-pink-400 to-red-400", // New color gradient
         },
     ];
 
@@ -436,10 +438,10 @@ const Landing = () => {
                     </motion.div>
                 </motion.div>
 
-                <AppFooter />
+                {/* <AppFooter /> */}
             </div>
         </div>
     );
 };
 
-export default Landing; 
+export default Landing;
